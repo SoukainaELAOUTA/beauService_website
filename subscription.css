@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f9fa; /* Fond beige */
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    cursor: pointer;
+    width: 85px;
+    height: auto;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff; /* Couleur du texte blanc */
+    text-decoration: none;
+    background-color: #007bff; /* Couleur de fond bleue */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #007bff; /* Couleur de fond bleue */
+}
+
+.nav__links {
+    list-style: none;
+    background-color: #007bff;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: black; /* Couleur du texte bleu */
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #0056b3; /* Couleur de fond bleu foncé */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #ffffff; /* Couleur de fond blanc */
+    color: #000000; /* Couleur du texte noir */
+} 
+
+footer {
+    background-color: grey;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 30px 30px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 200%;
+}
+
+.socialIcons a i {
+    font-size: 1em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 200px) {
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+form {
+    margin: 0 auto;
+    max-width: 600px; /* Ajustez la largeur maximale du formulaire selon vos besoins */
+    text-align: right;
+}
+
+label {
+    font-size: 18px; /* Ajustez la taille de la police des étiquettes */
+}
+
+input[type="tel"],
+input[type="password"],
+input[type="text"] {
+    width: 200%; /* Utiliser la largeur totale */
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px; /* Ajustez la taille de la police des champs de saisie */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px; /* Ajustez la taille de la police du bouton */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px ;
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 200%;
+    padding: 10px;
+    border: 1px solid red; /* Remplacer la couleur rouge par celle souhaitée */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 200%;
+    margin-top: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    width: 200%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: #fff;
+    background-image: none;
+    appearance: none;
+    position: relative;
+}
+
+select::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+select:hover,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.custom-input input[type="checkbox"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+

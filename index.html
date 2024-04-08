@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="post" class="form">
+        <div class="form-group">
+            <label for="nom">الاسم:</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="prénom">اللقب:</label>
+            <input type="text" id="prénom" name="prénom" required>
+        </div>
+        <div class="form-group">
+            <label for="ville">المدينة:</label>
+            <select id="ville" name="ville" required>
+                <option value="" disabled selected>اختر المدينة</option>
+                <option value="الرباط">الرباط</option>
+                <option value="الدار البيضاء">الدار البيضاء</option>
+                <option value="فاس">فاس</option>
+                <option value="مراكش">مراكش</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="مهنة">المهنة:</label>
+            <select id="مهنة" name="مهنة" required>
+                <option value="" disabled selected>اختر المهنة</option>
+                <option value="طبيب">طبيب</option>
+                <option value="مهندس">مهندس</option>
+                <option value="معلم">معلم</option>
+                <option value="مبرمج">مبرمج</option>
+            </select>
+        </div>
+        <button type="submit">إرسال</button>
+    </form>
+</body>
+</html>

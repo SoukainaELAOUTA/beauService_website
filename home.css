@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:500');
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+body {
+    background-color: #f8f9fa; /* Fond beige */
+    font-family: "Montserrat", sans-serif;
+    }
+
+.logo {
+cursor: pointer;
+width: 85px;
+height: auto;
+}
+
+li, a, button {
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-size: 25px;
+color: #ffffff; /* Couleur du texte blanc */
+text-decoration: none;
+background-color: #007bff; /* Couleur de fond bleue */
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 10%;
+background-color: #007bff; /* Couleur de fond bleue */
+}
+
+.nav__links {
+list-style: none;
+background-color: #007bff;
+
+}
+
+.nav__links li {
+display: inline-block;
+padding: 0px 20px;
+
+}
+
+.nav__links li a {
+transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+color: black; /* Couleur du texte bleu */
+}
+
+button {
+padding: 9px 25px;
+background-color: #0056b3; /* Couleur de fond bleu foncé */
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+}
+
+button:hover {
+background-color: #ffffff; /* Couleur de fond blanc */
+color: #000000; /* Couleur du texte noir */
+}
+
+.banner {
+    background-image: url('logo.jpeg'); /*Chemin vers votre image*/
+    background-size: cover; /* Pour couvrir la largeur de la page */
+    background-position: center; /* Pour centrer l'image */
+    height: 600px; /* Hauteur de la bannière, ajustez selon vos besoins */
+    position: relative; /* Position relative pour permettre la superposition */
+    display: flex; /* Pour centrer le contenu verticalement */
+    justify-content: center; /* Pour centrer le contenu horizontalement */
+}
+
+.banner-text {
+    color: black; /* Couleur du texte */
+    font-size: 36px; /* Taille de la police du texte */
+    text-align: center; /* Pour centrer le texte horizontalement */
+    line-height: 300px; /* Hauteur de la bannière pour centrer verticalement */
+}
+
+.banner::before {
+    content: ''; /* Contenu vide */
+    position: absolute; /* Position absolue pour la superposition */
+    top: 0; /* Alignement en haut */
+    right: 0; /* Alignement à droite */
+    bottom: 0; /* Alignement en bas */
+    left: 0; /* Alignement à gauche */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond gris translucide */
+}
+
+.background-container {
+    position: relative;
+    /* background-image: url('../images/bricolage.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.foreground-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.combo-box-container {
+    margin: 0 10px;
+}
+
+.combo-box {
+    width: 500px;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button {
+    width: 100px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button img {
+    width: 20px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+footer{
+    background-color: grey;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 30px 30px 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 200%;
+}
+.socialIcons a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 200px){
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
